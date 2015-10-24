@@ -58,7 +58,8 @@ setwd(dir)
 data3 <- mutate(data2, activity=activities[activity, 2])
 
 #Appropriately labels the data set with descriptive variable names
-# according to 
+# According to lectures I have chose to put all variable 
+#names in lower case and remove all non-alphabetic characters.
 data4 <- data3
 names(data4) <- tolower(names(data4)) 
 names(data4) <- gsub("-", "", names(data4))
